@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/Qianjiachen55/micro-todoList/conf"
 	"github.com/Qianjiachen55/micro-todoList/core"
 	"github.com/Qianjiachen55/micro-todoList/services"
 	"github.com/micro/go-micro/v2"
@@ -8,7 +9,8 @@ import (
 	"github.com/micro/go-micro/v2/registry/etcd"
 )
 
-func main()  {
+func main() {
+	conf.Init()
 	etcdReg := etcd.NewRegistry(
 		registry.Addrs("127.0.0.1:2379"),
 		)

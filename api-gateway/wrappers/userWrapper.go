@@ -25,3 +25,7 @@ func (wrapper *userWrapper) Call(ctx context.Context, req client.Request, resp i
 		return err
 	})
 }
+
+func NewUserWrapper(c client.Client) client.Client {
+	return &userWrapper{c}
+}

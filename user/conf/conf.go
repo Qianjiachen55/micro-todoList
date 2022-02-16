@@ -8,7 +8,7 @@ import (
 )
 
 func Init()  {
-	home := "conf/config"
+	home := "conf/"
 	viper.AddConfigPath(home)
 	viper.SetConfigType("toml")
 	viper.SetConfigName("config")
