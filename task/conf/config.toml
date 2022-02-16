@@ -1,0 +1,19 @@
+[service]
+AppMode = "debug"
+HttpPort = "3000"
+
+[mysql]
+DB = "mysql"
+Host = "127.0.0.1"
+Port = 3306
+User = "root"
+Passwd = ""
+DBName = "todoList"
+
+
+[rabbitmq]
+RabbitMQ = "amqp"
+RabbitMQUser = "guest"
+RabbitMQPassWord = "guest"
+RabbitMQHost = "localhost"
+RabbitMQPort = 5672
